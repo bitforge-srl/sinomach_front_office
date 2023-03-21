@@ -4,8 +4,8 @@ a:focus,a:hover{text-decoration:none}
 .block-slider .bx-next,.block-slider .bx-prev{width:39px;height:91px;text-align:center;font-size:6em;position:absolute;top:50%;-ms-transform:translateY(-50%);-webkit-transform:translateY(-50%);transform:translateY(-50%);line-height:50px;-moz-transition:all .45s ease;-webkit-transition:all .45s ease;-o-transition:all .45s ease;-ms-transition:all .45s ease;transition:all .45s ease;display:block;color:#fff;z-index:999;opacity:.5}
 .block-slider img{width:100%;height:auto}
 .block-slider .bx-next i,.block-slider .bx-prev i{display:none}
-.block-slider .bx-prev{left:3%;padding-right:3px;background:url(./images/carousel-control-left.png) no-repeat}
-.block-slider .bx-next{right:3%;padding-left:3px;background:url(./images/carousel-control-right.png) no-repeat}
+.block-slider .bx-prev{left:3%;padding-right:3px;background:url(../images/carousel-control-left.png) no-repeat}
+.block-slider .bx-next{right:3%;padding-left:3px;background:url(../images/carousel-control-right.png) no-repeat}
 .block-slider:hover .bx-prev{left:4%;opacity:1}
 .block-slider:hover .bx-next{right:4%;opacity:1}
 .block-slider .bx-next:hover,.block-slider .bx-prev:hover{opacity:1}
