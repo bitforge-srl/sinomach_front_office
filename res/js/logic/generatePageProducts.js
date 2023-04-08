@@ -1,16 +1,11 @@
 function generatePageProducts(contentElement) {
 
-    console.log(contentElement)
-
     function getQueryParam(item) {
       var svalue = window.location.search.match(new RegExp('[\?\&]' + item + '=([^\&]*)(\&?)', 'i'));
       return svalue ? svalue[1] : svalue;
     }
 
-    var page = getQueryParam("page")
     var typeId = getQueryParam("typeId")
-    console.log(page);
-    console.log(typeId);
 
     var contentProducts = (`
                               <div class="clearfix"></div>
@@ -87,7 +82,6 @@ function generatePageProducts(contentElement) {
              if (response.success == false){
                  return;
              }
-             console.log(response);
 
             for (i=0; i<response.length; i++){
                 var nameType = response[i].name;
@@ -111,7 +105,6 @@ function generatePageProducts(contentElement) {
                 var contentInnerSubType = document.getElementById("subTypeId="+ response[i].subTypes[j].id);
 
                     for(k=0; k< response[i].subTypes[j].products.length; k++){
-                        console.log(response[i].subTypes[j].products[k].name);
 
                         var shortSpecification = "";
                         var shortSpecs = JSON.parse(response[i].subTypes[j].products[k].shortSpecification);
@@ -134,10 +127,11 @@ function generatePageProducts(contentElement) {
                 }
             }
 
-            const element = document.getElementById(typeId);
-
-            element.scrollIntoView({block: "start", inline: "nearest"});
-            window.scrollBy(0,-63);
+            if(typeId>0){
+                const element = document.getElementById(typeId);
+                element.scrollIntoView({block: "start", inline: "nearest"});
+                window.scrollBy(0,-63);
+            }
 
 
         }).done(function() {

@@ -6,12 +6,9 @@ function getQueryParam(item) {
 
 var page = getQueryParam("page") || "main";
 var productId = getQueryParam("product_id");
-            console.log(productId);
 var url = "http://127.0.0.1:8080/api/product_page/"+ productId;
 
 var contentElement = document.getElementById("container");
-console.log("content element:");
-console.log(contentElement)
 var contentProduct = (`<div class="js-gallery-wrap">
                      <div itemscope itemtype="http://schema.org/Product">
                          <div itemprop="description">
@@ -364,78 +361,7 @@ var contentProduct = (`<div class="js-gallery-wrap">
                         </div>
                      </div>
                   </div>`);
-var contentMain = (`   <div class="block-slider block-slider4">
-                            <div class="bx-wrapper" style="max-width: 100%;">
-                                <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 433px;">
-                                    <ul id="bxslider-home4"
-                                        style="width: 515%; position: relative; transition-duration: 0s; transform: translate3d(-4989px, 0px, 0px);">
-                                        <li style="float: left; list-style: none; position: relative; width: 1663px;" class="bx-clone">
-                                            <img src="./res/images/banner_04.jpg" class="d-none d-md-block">
-                                            <img src="./res/images/mobilebanner_04.jpg" class="d-block d-md-none">
-                                            <div class="banner_txt4">
-                                                <h1>
-                                                    <span>ВЫСОКОКАЧЕСТВЕННОЕ</span> ОБОРУДОВАНИЕ ДЛЯ ВАШЕГО БИЗНЕСА
-                                                </h1>
-                                            </div>
-                                        </li>
-                                        <li style="float: left; list-style: none; position: relative; width: 1663px;">
-                                            <img src="./res/images/banner_02.jpg" class="d-none d-md-block">
-                                            <img src="./res/images/mobilebanner_02.jpg" class="d-block d-md-none">
-                                            <div class="banner_txt2">
-                                                <h1>ПРОИЗВОДИТЕЛЬ С <span>60</span>-ЛЕТНИМ ОПЫТОМ </h1>
-                                            </div>
-                                        </li>
-                                        <li style="float: left; list-style: none; position: relative; width: 1663px;">
-                                            <img src="./res/images/banner_03.jpg" class="d-none d-md-block">
-                                            <img src="./res/images/mobilebanner_03.jpg" class="d-block d-md-none">
-                                            <div class="banner_txt3">
-                                                <h1>
-                                                    <span>СДЕЛАЕМ</span> НЕВОЗМОЖНОЕ ВМЕСТЕ С КЛИЕНТАМИ
-                                                </h1>
-                                            </div>
-                                        </li>
-                                        <li style="float: left; list-style: none; position: relative; width: 1663px;">
-                                            <img src="./res/images/banner_04.jpg" class="d-none d-md-block">
-                                            <img src="./res/images/mobilebanner_04.jpg" class="d-block d-md-none">
-                                            <div class="banner_txt4">
-                                                <h1>
-                                                    <span>ВЫСОКОКАЧЕСТВЕННОЕ</span> ОБОРУДОВАНИЕ ДЛЯ ВАШЕГО БИЗНЕСА
-                                                </h1>
-                                            </div>
-                                        </li>
-                                        <li style="float: left; list-style: none; position: relative; width: 1663px;" class="bx-clone">
-                                            <img src="./res/images/banner_02.jpg" class="d-none d-md-block">
-                                            <img src="./res/images/mobilebanner_02.jpg" class="d-block d-md-none">
-                                            <div class="banner_txt2">
-                                                <h1>ПРОИЗВОДИТЕЛЬ С <span>60</span>-ЛЕТНИМ ОПЫТОМ </h1>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="bx-controls bx-has-pager bx-has-controls-direction">
-                                    <div class="bx-pager bx-default-pager">
-                                        <div class="bx-pager-item">
-                                            <a href="final.html?page=main" data-slide-index="0" class="bx-pager-link">1</a>
-                                        </div>
-                                        <div class="bx-pager-item">
-                                            <a href="final.html?page=main" data-slide-index="1" class="bx-pager-link">2</a>
-                                        </div>
-                                        <div class="bx-pager-item">
-                                            <a href="final.html?page=main" data-slide-index="2" class="bx-pager-link active">3</a>
-                                        </div>
-                                    </div>
-                                    <div class="bx-controls-direction">
-                                        <a class="bx-prev" href="./index.html">
-                                            <i class="icon-angle-left"></i>
-                                        </a>
-                                        <a class="bx-next" href="./index.html">
-                                            <i class="icon-angle-right"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
+var contentMain = (`
                 <div class="clearfix"></div>
                     <div class="homeabout">
                        <div class="content">
@@ -800,7 +726,7 @@ switch (page){
               .replace(/{{ADD_DESCRIPTION}}/g, additionalDescription)
               .replace(/{{TYPE}}/g, type.name);
 
-              contentElement.insertAdjacentHTML('beforeBegin', contentProductFinal);
+              contentElement.insertAdjacentHTML('beforeEnd', contentProductFinal);
               generateSimilarProducts(productId);
 
             }
@@ -820,23 +746,19 @@ switch (page){
         generatePageProducts(contentElement);
         break;
     case "service":
-        contentElement.insertAdjacentHTML('afterEnd', contentService);
+        contentElement.insertAdjacentHTML('beforeEnd', contentService);
         break;
     case "parts":
-        contentElement.insertAdjacentHTML('afterEnd', contentParts);
+        contentElement.insertAdjacentHTML('beforeEnd', contentParts);
         break;
     case "introduction":
-        contentElement.insertAdjacentHTML('afterEnd', contentIntroduction);
+        contentElement.insertAdjacentHTML('beforeEnd', contentIntroduction);
         break;
     case "contacts":
-        contentElement.insertAdjacentHTML('afterEnd', contentContacts);
+        contentElement.insertAdjacentHTML('beforeEnd', contentContacts);
         break;
     case "main":
     default:
-       contentElement.insertAdjacentHTML('afterEnd', contentMain);
+       contentElement.insertAdjacentHTML('beforeEnd', contentMain);
 
-       const element = document.getElementById(typeId);
-       element.scrollIntoView({block: "start", inline: "nearest"});
-       window.scrollBy(0,-63);
-
-}service
+}
