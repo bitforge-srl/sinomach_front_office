@@ -103,7 +103,7 @@ to {opacity:1;transform:none}
 }
 .header_right {height:auto;float:right;width: 78%;}
 .headerin {position:relative;margin:0 auto;width:94%;max-width:1200px;z-index:100}
-#etw_logo {float:left;width:220px;text-align:center;position:relative;margin:33px 5px 22px 0;transition:.3s all ease-in-out;z-index:1;}
+#etw_logo {float:left;width:220px;text-align:center;position:relative;margin:10px 5px 5px 0;transition:.3s all ease-in-out;z-index:1;}
 /*language*/
 .etw_language{ width:180px;float:right; color:#000; }
 .etw_language>ul{position:relative;z-index:99999999;float:right;}
