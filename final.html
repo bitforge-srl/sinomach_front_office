@@ -13,7 +13,11 @@
     <link rel="stylesheet" href="./res/css/layer.css" id="layuicss-layer">
     <link type="text/css" href="./res/css/swiper.css" rel="stylesheet"/>
     <link type="text/css" href="./res/css/videojs/videocss.css" rel="stylesheet"/>
+
+    <link type="text/css" href="./res/css/popUp.css" rel="stylesheet"/>
+
     <link rel="stylesheet" href="./res/css/plyr.css">
+
 </head>
 <body>
     <div class="gridContainer clearfix">
@@ -105,10 +109,80 @@
     <!-- CONTENT START -->
     <div id="container" class="etw_container">
     </div>
+    <body>
+
     <div class="clearfix" id="etwclear"></div>
+
     <!-- CONTENT END -->
     <!-- FOOTER START -->
     <div id="footer">
+
+        <button class="fixedbut " onclick="show_popap('modal-1')">Отправить сообщение</button>
+
+        <!-- Окно 1 -->
+
+        <div class="overlay" id="modal-1">
+            <div class="flex-popap">
+                <div class="popap">
+                    <span class="close_popap">Закрыть</span>
+                    <h2>Введите свои данные</h2>
+                    <form>
+                        <div class="eachitem">
+                            <div class="etwleft">Email *</div>
+                            <div class="etwright">
+                            <input type="text" class="textarea_style"
+                                   id="email"
+                                   placeholder="Ваш Email"
+                                   name="email"
+                                   class="textarea_style"
+                                   onblur="checkDataOfMessage()"
+                                   onfocus="this.value=''">
+                            </div>
+                        </div>
+                        <div class="eachitem">
+                            <div class="etwleft">Телефон *</div>
+                            <div class="etwright">
+                                <input type="text" class="textarea_style"
+                                       value="" id="telephone"
+                                       name="telephone"
+                                       title="Telephone No."
+                                       placeholder="Телефон No."
+                                       onblur="checkDataOfMessage()"
+                                       onfocus="this.value=''">
+                            </div>
+                        </div>
+                        <div class="eachitem" id="areaheight">
+                            <div class="etwleft" style="margin-top:10px;">Сообщение</div>
+                            <div class="etwright">
+                                <textarea onblur="checkthistxt(this)"
+                                          id="message" name="message"
+                                          class="textarea_style"
+                                          title="For the Best results,we recommend including the following details:self introduction,required specifications,inquire about price,and so on"
+                                          placebolder="Content">
+                                </textarea>
+                            </div>
+                        </div>
+                        <div class="eachitem">
+                            <div class="etwleft">Ваше имя</div>
+                            <div class="etwright">
+                                <input type="text" class="textarea_style"
+                                       title="Ваше имя"
+                                       id="contacter"
+                                       name="contacter">
+                            </div>
+                        </div>
+                        <div align="center" class="etw09buttom">
+                            <input type="button" class="button"
+                                   id="sendmessagebutton"
+                                   value="Отправить"
+                                   title="Click here to send message to us" >
+                        </div>
+                        <div id="showresultmsg"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
         <div class="etw_footin">
             <div id="etw_bottom">
                 <div class="contact_b">
@@ -200,7 +274,13 @@
 <script src="./res/js/logic/generatePageProducts.js"></script>
 <script src="./res/js/logic/generateSimilarProducts.js"></script>
 <script src="./res/js/logic/contentGenerator.js"></script>
-<script type="text/javascript">
+<script type="text/javascript"></script>
+<script src="./res/js/popUp.js"></script>
+<script src="./res/js/checkDataOfMessage.js"></script>
+
+
+
+    <script>
          var swiper = new Swiper('.related_pro', {
          slidesPerView: 'auto',
          loop: true,
@@ -214,8 +294,8 @@
          prevEl: ".swiper-button-prev",
          },
          });
-
       </script>
+
 <script type="text/javascript">
          jQuery(document).ready(function() {
          	var etwvideoplay = '';

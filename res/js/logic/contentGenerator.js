@@ -678,7 +678,66 @@ var contentIntroduction = (`
 
 `)
 var contentContacts = (`
-СТРАНИЦА В РАЗРАБОТКЕ
+                      <div class="">
+                        <div id="quicknav">
+                          <div>
+                            <ul>
+                              <img src="./res/images/icon.png">
+                              <li>
+                                <a href="final.html?page=main">Главная</a>
+                              </li>
+                              <li>Контакты</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="content">
+                          <div class="contact_content">
+                            <div class="row mt-4">
+                              <div class="col-md-6">
+                                <div class="contact_des ">
+                                  <content>
+                                    <img src="./res/images/bottom_logo.png" alt="SINOMACH-HI International" class="mb-4">
+                                    <p>
+                                      <strong>Адрес:</strong> 3300, Tiraspol, Strada Șevcenco 97е
+                                    </p>
+                                    <p>
+                                      <strong>Тел.:</strong>
+                                      <a href="tel:+86-519-86781388">+86-519-86781388</a>
+                                      <br>
+                                      <span style="margin-left:44px;">
+                                        <a href="tel:+86-519-86752400">+86-519-86752400</a>
+                                      </span>
+                                    </p>
+                                    <p>
+                                      <strong>Email:</strong>
+                                      <a href="mailto:sales2@changlin.com.cn">sales2@changlin.com.cn</a>
+                                    </p>
+                                  </content>
+                                  <div class="left_share mb-4">
+                                    <div class="btn-group m-0">
+                                      <a class="btn" href="https://www.facebook.com/Sinomach-Heavy-Industry-100606858636628" target="_blank">
+                                        <i class="fab icon-facebook "></i>
+                                      </a>
+                                      <a class="btn" href="https://www.youtube.com/channel/UCEvdY17VJjXdVvIjJtX1C5Q" target="_blank">
+                                        <i class="fab icon-youtube"></i>
+                                      </a>
+                                      <a class="btn" href="https://api.whatsapp.com/send?phone=8618206118633" target="_blank">
+                                        <i class="icon-whatsapp"></i>
+                                      </a>
+                                      <a class="btn" href="https://twitter.com/sinomach" target="_blank">
+                                        <i class="fab icon-twitter "></i>
+                                      </a>
+                                    </div>
+                                    <!--code-->
+                                  </div>
+                                  <div class="clearfix"></div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2293.860716586834!2d29.608656511029043!3d46.86582272504663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c9033754a9e26f%3A0x4badbe7c343ce08e!2z0J_RgNC-0LTQsNC20LAg0YHQutC70LDQtNGB0LrQvtC5INGC0LXRhdC90LjQutC4INC4INC60L7QvNC_0LvQtdC60YLRg9GO0YnQuNGF!5e0!3m2!1sru!2s!4v1681052086901!5m2!1sru!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                      </div>
 
 `)
 var contentService = (`
@@ -760,5 +819,6 @@ switch (page){
     case "main":
     default:
        contentElement.insertAdjacentHTML('beforeEnd', contentMain);
+
 
 }
