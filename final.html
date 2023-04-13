@@ -126,6 +126,7 @@
                 <div class="popap">
                     <span class="close_popap">Закрыть</span>
                     <h2>Введите свои данные</h2>
+                    <p>Обязательные поля: email или телефон</p>
                     <form>
                         <div class="eachitem">
                             <div class="etwleft">Email *</div>
@@ -135,8 +136,9 @@
                                    placeholder="Ваш Email"
                                    name="email"
                                    class="textarea_style"
+                                   onfocus="this.value=''"
                                    onblur="checkDataOfMessage()"
-                                   onfocus="this.value=''">
+                            >
                             </div>
                         </div>
                         <div class="eachitem">
@@ -148,17 +150,18 @@
                                        title="Telephone No."
                                        placeholder="Телефон No."
                                        onblur="checkDataOfMessage()"
-                                       onfocus="this.value=''">
+                                       onfocus="this.value=''"
+                                        >
                             </div>
                         </div>
                         <div class="eachitem" id="areaheight">
                             <div class="etwleft" style="margin-top:10px;">Сообщение</div>
                             <div class="etwright">
-                                <textarea onblur="checkthistxt(this)"
-                                          id="message" name="message"
+                                <textarea id="message" name="message"
                                           class="textarea_style"
                                           title="For the Best results,we recommend including the following details:self introduction,required specifications,inquire about price,and so on"
-                                          placebolder="Content">
+                                          placebolder="Content"
+                                          onfocus="this.value=''">
                                 </textarea>
                             </div>
                         </div>
@@ -168,15 +171,25 @@
                                 <input type="text" class="textarea_style"
                                        title="Ваше имя"
                                        id="contacter"
-                                       name="contacter">
+                                       name="contacter"
+                                       onfocus="this.value=''">
                             </div>
                         </div>
                         <div align="center" class="etw09buttom">
                             <input type="button" class="button"
                                    id="sendmessagebutton"
                                    value="Отправить"
-                                   title="Click here to send message to us" >
+                                   title="Click here to send message to us"
+                                   onclick="sendMessage()">
                         </div>
+                        <div class="message" id="messageSend">
+                            <p>Ваше сообщение отправлено</p>
+                        </div>
+                        <div class="message" id="messageNoSend">
+                            <p>Ваше сообщение не отправлено</p>
+                            <p>Повторите попытку позже</p>
+                        </div>
+
                         <div id="showresultmsg"></div>
                     </form>
                 </div>
@@ -277,6 +290,7 @@
 <script type="text/javascript"></script>
 <script src="./res/js/popUp.js"></script>
 <script src="./res/js/checkDataOfMessage.js"></script>
+<script src="./res/js/sendMessage.js"></script>
 
 
 

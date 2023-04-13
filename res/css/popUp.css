@@ -77,3 +77,8 @@
 .fixedbut:hover {
 	background: #222;
 }
+
+input.valid {
+  border-color: green;
+}
+
