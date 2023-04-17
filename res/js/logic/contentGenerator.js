@@ -444,12 +444,12 @@ var contentMain = (`
                                 <li>
                                    <ol>
                                       <li class="product_img">
-                                         <a href="./9excavator.html">
+                                         <a href="final.html?page=products&typeId=13">
                                          <img src="./res/images/typeImg/pro_02.png" alt="Excavator">
                                          </a>
                                       </li>
                                       <li class="product_con">
-                                         <a href="./9excavator.html">Экскаватор</a>
+                                         <a href="final.html?page=products&typeId=13">Экскаватор</a>
                                       </li>
                                    </ol>
                                 </li>
