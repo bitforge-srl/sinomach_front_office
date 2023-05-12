@@ -19,7 +19,7 @@ var contentProduct = (`<div class="js-gallery-wrap">
                                        <img src="res/images/icon.png">
                                        <li><a href="final.html?page=main">Главная</a></li>
                                        <li><a href="final.html?page=products">Продукция</a></li>
-                                       <li><a href="1wheel_loader.html">{{TYPE}}</a></li>
+                                       <li><a href="final.html?page=products&typeId=13">{{TYPE}}</a></li>
                                        <li>{{NAME}}</li>
                                     </ul>
                                  </div>
@@ -39,9 +39,7 @@ var contentProduct = (`<div class="js-gallery-wrap">
                                               {{ADD_DESCRIPTION}}
                                            </ul>
                                        <div class="clearfix"></div>
-                                       <div class="sendinquiry" onClick="openwindow('');return false">
-                                          <span>Запрос от</span>
-                                       </div>
+
                                     </div>
                                     <div class="col-12 col-md-5 order-first order-md-last">
                                        <div class="left_pic show_pro_video">
@@ -58,161 +56,11 @@ var contentProduct = (`<div class="js-gallery-wrap">
                                  </div>
                                  <div class="clearfix"></div>
                               </div>
-                              <div class="page-nav-box js-page-nav-box">
-                                 <div class="page-nav js-page-nav">
-                                    <div class="content">
-                                       <ul class="list">
-                                          <li class="pnav-item current">
-                                             <a href="javascript:;" data-href="#a1" class="pnav-link">Технические
-                                             характеристики</a>
-                                          </li>
-                                          <li class="pnav-item">
-                                             <a href="javascript:;" data-href="#a2" class="pnav-link">Общие сведения</a>
-                                          </li>
-                                          <li class="pnav-item">
-                                             <a href="javascript:;" data-href="#a3" class="pnav-link">Видео</a>
-                                          </li>
-                                          <li class="pnav-item">
-                                             <a href="javascript:;" data-href="#a4" class="pnav-link">Отправить
-                                             запрос</a>
-                                          </li>
-                                       </ul>
-                                    </div>
-                                 </div>
-                              </div>
+
+
                               <div class="nav-page" id="a1">
+
                                  {{CONTENT}}
-
-                              <!--div class="nav-page" id="a2">
-                                 <div class="content">
-                                    <div class="etw_hometitle"><em>Общие сведения</em></div>
-                                    <ul class="fea_list">
-                                       <li>
-                                          <figure><a href="upload/3545/o/13_1_Wheel_Loader_918_01.jpg"><img
-                                             src="res/images/13_1_Wheel_Loader_918_01m.jpg"
-                                             alt="Колесный погрузчик ZL18H"></a></figure>
-                                          <div class="wrap">
-                                             <p>Фронтальный погрузчик оснащен отечественным двигателем YUNNEI, который
-                                                обеспечивает высокую производительность при высокой мощности и низкой
-                                                частоте отказов. Благодаря гидравлическому преобразователю крутящего
-                                                момента, оптимальному весу кузова и соотношению скоростей, колесный
-                                                погрузчик обладает как большим тяговым усилием, так и высоким усилием
-                                                отрыва. Таким образом, погрузчик имеет идеальную скорость движения при
-                                                меньшем расходе топлива.
-                                             </p>
-                                          </div>
-                                       </li>
-                                       <li>
-                                          <figure><a href="upload/3545/o/13_1_Wheel_Loader_918_02.jpg"><img
-                                             src="res/images/13_1_Wheel_Loader_918_02m.jpg"
-                                             alt="Колесный погрузчик ZL18H"></a></figure>
-                                          <div class="wrap">
-                                             <p>Фронтальный погрузчик оснащен двухосным приводом, механизмом бокового
-                                                торможения, поворотным задним мостом и шинами большого размера.
-                                                Фронтальный погрузчик обладает хорошими внедорожными характеристиками и
-                                                компактной конструкцией трансмиссии.
-                                             </p>
-                                          </div>
-                                       </li>
-                                       <li>
-                                          <figure><a href="upload/3545/o/13_1_Wheel_Loader_918_03.jpg"><img
-                                             src="res/images/13_1_Wheel_Loader_918_03m.jpg"
-                                             alt="Колесный погрузчик ZL18H"></a></figure>
-                                          <div class="wrap">
-                                             <p>Колесный погрузчик с шарнирно-сочлененной рамой позволяет легко загружать
-                                                и разгружать материалы. Кроме того, конструкция с малым радиусом
-                                                поворота делает его гибким и маневренным.
-                                             </p>
-                                          </div>
-                                       </li>
-                                       <li>
-                                          <figure><a href="upload/3545/o/13_1_Wheel_Loader_918_04.jpg"><img
-                                             src="res/images/13_1_Wheel_Loader_918_04m.jpg"
-                                             alt="Колесный погрузчик ZL18H"></a></figure>
-                                          <div class="wrap">
-                                             <p>Колесный погрузчик оснащен одной стрелой, высокой точкой поворота,
-                                                короткой рулевой тягой, новой Z-образной стрелой погрузчика для
-                                                обеспечения высокой способности копания. Прочность стрелы погрузчика
-                                                увеличена, чтобы обеспечить достаточную силу для захвата, погрузки и
-                                                разгрузки материалов. Навесное оборудование обладают достаточной
-                                                прочностью, чтобы противостоять высоким ударным нагрузкам.
-                                             </p>
-                                          </div>
-                                       </li>
-                                       <li>
-                                          <figure><a href="upload/3545/o/13_1_Wheel_Loader_918_05.jpg"><img
-                                             src="res/images/13_1_Wheel_Loader_918_05m.jpg"
-                                             alt="Колесный погрузчик ZL18H"></a></figure>
-                                          <div class="wrap">
-                                             <p>Колесный погрузчик оснащен трансмиссией с разделением мощности, имеющей
-                                                одноступенчатый однофазный трехэлементный преобразователь крутящего
-                                                момента и редуктор с параллельными валами, что обеспечивает высокую
-                                                эффективность, а также удобство обслуживания. Двухступенчатая
-                                                гидравлическая система переключения передач обеспечивает плавное
-                                                переключение без необходимости отключения питания. Поскольку
-                                                гидравлическая трансмиссия может адаптироваться к изменению внешнего
-                                                сопротивления в определенном диапазоне, нет необходимости часто
-                                                переключать передачи, благодаря чему достигается высокий КПД.
-                                             </p>
-                                          </div>
-                                       </li>
-                                       <li>
-                                          <figure><a href="upload/3545/o/13_1_Wheel_Loader_918_06.jpg"><img
-                                             src="res/images/13_1_Wheel_Loader_918_06m.jpg"
-                                             alt="Колесный погрузчик ZL18H"></a></figure>
-                                          <div class="wrap">
-                                             <p>Колесный погрузчик оснащен чувствительной к нагрузке гидравлической
-                                                системой, отличающейся компактной конструкцией, небольшими размерами,
-                                                простотой обслуживания, сниженным потреблением энергии и меньшей
-                                                трудоемкостью.
-                                             </p>
-                                          </div>
-                                       </li>
-                                       <li>
-                                          <figure><a href="upload/3545/o/13_1_Wheel_Loader_918_07.jpg"><img
-                                             src="res/images/13_1_Wheel_Loader_918_07m.jpg"
-                                             alt="Колесный погрузчик ZL18H"></a></figure>
-                                          <div class="wrap">
-                                             <p>Навесное оборудование колесного погрузчика, такое как гидравлический
-                                                молот, удлинитель стрелы или захват для бревен, может быть установлено
-                                                по мере необходимости.
-                                             </p>
-                                          </div>
-                                       </li>
-                                       <li>
-                                          <figure><a href="upload/3545/o/13_1_Wheel_Loader_918_08.jpg"><img
-                                             src="res/images/13_1_Wheel_Loader_918_08m.jpg"
-                                             alt="Колесный погрузчик ZL18H"></a></figure>
-                                          <div class="wrap">
-                                             <p>Колесный погрузчик имеет удобную герметичную кабину с улучшенным передним
-                                                обзором до 47%. Усиленный навес для защиты от опрокидывания может быть
-                                                оборудован по мере необходимости, чтобы гарантировать безопасность
-                                                операторов.
-                                             </p>
-                                          </div>
-                                       </li>
-                                    </ul>
-                                 </div>
-                              </div-->
-
-                              <div class="nav-page" id="a3">
-                                 <div class="content">
-                                    <div class="etw_hometitle"><em>Видео</em></div>
-                                    <div class="videoall">
-                                       <ul>
-                                          <li><a class="video_box" href="#"
-                                             data-video-path="en/guojizhonggong/wheel-loader-1_en"><span><img
-                                             src="res/images/video01.jpg"></span></a></li>
-                                          <li><a class="video_box" href="#"
-                                             data-video-path="en/guojizhonggong/wheel-loader-2_en"><span><img
-                                             src="res/images/video02.jpg"></span></a></li>
-                                          <li><a class="video_box" href="#"
-                                             data-video-path="en/guojizhonggong/wheel-loader-3_en"><span><img
-                                             src="res/images/video03.jpg"></span></a></li>
-                                       </ul>
-                                    </div>
-                                 </div>
-                              </div>
 
                               <div class="nav-page nav-page1">
                                  <div class="content">
@@ -230,25 +78,7 @@ var contentProduct = (`<div class="js-gallery-wrap">
                                     </div>
                                  </div>
                               </div>
-                              <div class="nav-page" id="a4">
-                                 <div class="content">
-                                    <div class="etw_hometitle"><em>Отправить запрос</em></div>
-                                    <div id="etw_set_feedback_form">
-                                       <div id="floatchatiframe2011"></div>
-                                    </div>
-                                    <div class="big_probanner_box">
-                                       <a href="1wheel_loader.html">
-                                          <img src="res/images/typeImgBanner/inner_banner_колесный_погрузчик.jpg" alt="Wheel Loaders">
-                                          <div class="bigpro_des">
-                                             <h3>Колесные погрузчики</h3>
-                                             <p>Подробнее об ассортименте колесных погрузчиков CHANGLIN
-                                             </p>
-                                             <span class="etw_deiscover">Подробнее о машинах</span>
-                                          </div>
-                                       </a>
-                                    </div>
-                                 </div>
-                              </div>
+
                               <div class="why_us">
                                  <div class="content">
                                     <div class="etw_hometitle small_font text-center">ПОЧЕМУ КЛИЕНТЫ
@@ -295,32 +125,32 @@ var contentProduct = (`<div class="js-gallery-wrap">
                                        <ul>
                                           <li>
                                              <ol>
-                                                <li class="product_img"><a href="9excavator.html"><img
+                                                <li class="product_img"><a href="final.html?page=products&typeId=13"><img
                                                    src="res/images/typeImg/pro_02.png" alt="Excavator"></a></li>
-                                                <li class="product_con"><a href="9excavator.html">Экскаватор</a></li>
+                                                <li class="product_con"><a href="final.html?page=products&typeId=13">Экскаватор</a></li>
                                              </ol>
                                           </li>
                                           <li>
                                              <ol>
-                                                <li class="product_img"><a href="2motor_grader.html"><img
+                                                <li class="product_img"><a href="final.html?page=products&typeId=7"><img
                                                    src="res/images/typeImg/pro_03.png" alt="Автогрейдер "></a></li>
-                                                <li class="product_con"><a href="2motor_grader.html">Автогрейдер</a>
+                                                <li class="product_con"><a href="final.html?page=products&typeId=7">Автогрейдер</a>
                                                 </li>
                                              </ol>
                                           </li>
                                           <li>
                                              <ol>
-                                                <li class="product_img"><a href="3road_roller.html"><img
+                                                <li class="product_img"><a href="final.html?page=products&typeId=3"><img
                                                    src="res/images/typeImg/pro_04.png" alt="Дорожный каток "></a></li>
-                                                <li class="product_con"><a href="3road_roller.html">Дорожный каток</a>
+                                                <li class="product_con"><a href="final.html?page=products&typeId=3">Дорожный каток</a>
                                                 </li>
                                              </ol>
                                           </li>
                                           <li>
                                              <ol>
-                                                <li class="product_img"><a href="10-bulldozer.html"><img
+                                                <li class="product_img"><a href="final.html?page=products&typeId=4"><img
                                                    src="res/images/typeImg/pro_05.png" alt="Bulldozer"></a></li>
-                                                <li class="product_con"><a href="10-bulldozer.html">Бульдозер</a></li>
+                                                <li class="product_con"><a href="final.html?page=products&typeId=4">Бульдозер</a></li>
                                              </ol>
                                           </li>
                                        </ul>
@@ -333,24 +163,24 @@ var contentProduct = (`<div class="js-gallery-wrap">
                                     <div class="service_content pt-0">
                                        <ul>
                                           <li>
-                                             <a href="overseas_service.html" class="images"><img
+                                             <a href="final.html?page=service" class="images"><img
                                                 src="res/images/service_03.jpg"></a>
                                              <div class="text">
-                                                <a href="overseas_service.html" class="title">Международное
+                                                <a href="final.html?page=service" class="title">Международное
                                                 обслуживание</a>
                                              </div>
                                           </li>
                                           <li>
-                                             <a href="overseas_service.html" class="images"><img
+                                             <a href="final.html?page=service" class="images"><img
                                                 src="res/images/service_01.jpg"></a>
                                              <div class="text">
-                                                <a href="overseas_service.html" class="title">Обслуживание</a>
+                                                <a href="final.html?page=service" class="title">Обслуживание</a>
                                              </div>
                                           </li>
                                           <li>
-                                             <a href="parts.html" class="images"><img src="res/images/service_02.jpg"></a>
+                                             <a href="final.html?page=parts" class="images"><img src="res/images/service_02.jpg"></a>
                                              <div class="text">
-                                                <a href="parts.html" class="title">Запчасти</a>
+                                                <a href="final.html?page=parts" class="title">Запчасти</a>
                                              </div>
                                           </li>
                                        </ul>
@@ -553,43 +383,7 @@ var contentMain = (`
                           </div>
                        </div>
                     </div>
-                    <div class="industry">
-                       <div class="content">
-                          <div class="etw_hometitle">
-                             <em>Наши <span>работы</span>
-                             </em>
-                          </div>
-                          <ul id="app_new_pro_home" style="">
-                             <li>
-                                <a href="./news-cl.html?id=35667" class="images ind_newimg">
-                                <img src="./res/images/2023031711500884838.jpg" alt="{{val.p_name}}">
-                                </a>
-                                <a href="./news-cl.html?id=35667" class="newname">Great start?SINOMACH devices have gone overseas in
-                                batches</a>
-                             </li>
-                             <li>
-                                <a href="./news-cl.html?id=35589" class="images ind_newimg">
-                                <img src="./res/images/202301091055210.png" alt="{{val.p_name}}">
-                                </a>
-                                <a href="./news-cl.html?id=35589" class="newname">With gratitude.We meet in 2023!</a>
-                             </li>
-                             <li>
-                                <a href="./news-cl.html?id=35365" class="images ind_newimg">
-                                <img src="./res/images/2022122818014540077.jpg" alt="{{val.p_name}}">
-                                </a>
-                                <a href="./news-cl.html?id=35365" class="newname">Sinomach-Hi International Equipment Company's
-                                agent in a Middle East country held a successful product exhibition</a>
-                             </li>
-                             <li>
-                                <a href="./news-cl.html?id=35149" class="images ind_newimg">
-                                <img src="./res/images/2022112517535884866.jpg" alt="{{val.p_name}}">
-                                </a>
-                                <a href="./news-cl.html?id=35149" class="newname">Sinomach-Hi International Equipment Company
-                                shipped bulk excavators</a>
-                             </li>
-                          </ul>
-                       </div>
-                    </div>
+
                     <div class="why_us">
                        <div class="content">
                           <div class="etw_hometitle">ПОЧЕМУ КЛИЕНТЫ <span>ВЫБИРАЮТ SINOMACH</span>
@@ -634,41 +428,7 @@ var contentMain = (`
                           </ul>
                        </div>
                     </div>
-                    <div class="service_content">
-                       <div class="content">
-                          <div class="etw_hometitle">ПОДДЕРЖКА ВАШЕГО <span>БИЗНЕСА</span>
-                          </div>
-                          <div class="title_bg">
-                             <img src="./res/images/title.png">
-                          </div>
-                          <ul>
-                       <!--      <li>
-                                <a href="./overseas_service.html" class="images">
-                                <img src="./res/images/service_03.jpg">
-                                </a>
-                                <div class="text">
-                                   <a href="./overseas_service.html" class="title">Международное обслуживание</a>
-                                </div>
-                             </li>  -->
-                             <li>
-                                <a href="./final.html?page=service" class="images">
-                                <img src="./res/images/service_01.jpg">
-                                </a>
-                                <div class="text">
-                                   <a href="final.html?page=service" class="title">Обслуживание</a>
-                                </div>
-                             </li>
-                             <li>
-                                <a href="./final.html?page=parts" class="images">
-                                <img src="./res/images/service_02.jpg">
-                                </a>
-                                <div class="text">
-                                   <a href="./final.html?page=parts" class="title">Запчасти</a>
-                                </div>
-                             </li>
-                          </ul>
-                       </div>
-                    </div>`);
+                    `);
 var contentParts = (`
 СТРАНИЦА В РАЗРАБОТКЕ
 
