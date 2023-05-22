@@ -20,7 +20,7 @@ function generateSimilarProducts(productId){
 
     var productId = getQueryParam("product_id");
 
-    var url = "http://127.0.0.1:8080/api/similar_product/"+ productId;
+    var url = "http://173.212.205.35:8080/api/similar_product/"+ productId;
 
     var contentElement = document.getElementById("similarProducts");
 

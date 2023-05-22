@@ -1,7 +1,7 @@
 generateMenu();
 
 function generateMenu() {
-    var jqxhr = $.get("http://127.0.0.1:8080/api/type/all", function(types) {
+    var jqxhr = $.get("http://173.212.205.35:8080/api/type/all", function(types) {
             var leftNavElem = document.getElementById("navleftgenerated");
             var rightNavElem = document.getElementById("navrightgenerated");
 

@@ -6,7 +6,7 @@ function getQueryParam(item) {
 
 var page = getQueryParam("page") || "main";
 var productId = getQueryParam("product_id");
-var url = "http://127.0.0.1:8080/api/product_page/"+ productId;
+var url = "http://173.212.205.35:8080/api/product_page/"+ productId;
 
 var contentElement = document.getElementById("container");
 var contentProduct = (`<div class="js-gallery-wrap">
