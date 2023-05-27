@@ -20,7 +20,7 @@ function generateSimilarProducts(productId){
 
     var productId = getQueryParam("product_id");
 
-    var url = "http://173.212.205.35:8080/api/similar_product/"+ productId;
+    var url = "https://cn-sinomach.md/api/similar_product/"+ productId;
 
     var contentElement = document.getElementById("similarProducts");
 

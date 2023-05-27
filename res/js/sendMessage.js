@@ -24,7 +24,7 @@ function sendMessage(){
                              productId: productIdMessage,
                             };
 
-                       fetch("http://127.0.0.1:8080/api/feedback/insert", {
+                       fetch("https://cn-sinomach.md/api/feedback/insert", {
                          method: 'POST',
                          headers: {
                            'Content-Type': 'application/json',

@@ -73,7 +73,7 @@ function generatePageProducts(contentElement) {
 
     var allProducts = "";
 
-    var url = "http://173.212.205.35:8080/api/type/all";
+    var url = "https://cn-sinomach.md/api/type/all";
 
     var contentElementInner = document.getElementById("pageProducts");
 
