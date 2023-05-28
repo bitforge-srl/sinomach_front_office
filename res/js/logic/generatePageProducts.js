@@ -66,7 +66,7 @@ function generatePageProducts(contentElement) {
               </li>
            </ol>
            <div class="more">
-               <a href="final.html?page=product&product_id={{PRODUCT_ID}}">"ЧИТАТЬ ДАЛЕЕ </a>
+               <a href="final.html?page=product&product_id={{PRODUCT_ID}}">ПОДРОБНЕЕ </a>
            </div>
         </li>
     `)
