@@ -480,7 +480,7 @@ var contentContacts = (`
                                     <div class="clearfix"></div>
 
                                     <p>
-                                        <h4>SRL “Mecalux-Logist”</h4>
+                                        <h4>SRL “Mecalux-logistic” SRL</h4>
                                         <strong>Адрес:</strong> 2023, Chisinau, str. Uzinelor, 78
                                     </p>
                                     <p>
