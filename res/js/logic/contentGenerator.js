@@ -441,7 +441,8 @@ var contentParts = (`<div class="">
                              </ul>
                            </div>
                          </div>
-                         <h4> СТРАНИЦА В РАЗРАБОТКЕ <h4/>
+                         <p><center><img src="./res/images/repair_work.png" alt="Письма мастера дзен"><center></p>
+                         <h4> <center> СТРАНИЦА В РАЗРАБОТКЕ <center/><h4/>
                      </div>
 
 `)
@@ -457,7 +458,8 @@ var contentIntroduction = (`<div class="">
                                     </ul>
                                   </div>
                                 </div>
-                                <h4> СТРАНИЦА В РАЗРАБОТКЕ <h4/>
+                               <p><center><img src="./res/images/repair_work.png" alt="Письма мастера дзен"><center></p>
+                               <h4> <center> СТРАНИЦА В РАЗРАБОТКЕ <center/><h4/>
                             </div>
 
 `)
@@ -532,8 +534,22 @@ var contentContacts = (`
                       </div>
 
 `)
-var contentService = (`
-СТРАНИЦА В РАЗРАБОТКЕ
+var contentService = (`<div class="">
+                           <div id="quicknav">
+                             <div>
+                               <ul>
+                                 <img src="./res/images/icon.png">
+                                 <li>
+                                   <a href="final.html?page=main">Главная</a>
+                                 </li>
+                                 <li>О компании</li>
+                               </ul>
+                             </div>
+                           </div>
+                           <p><center><img src="./res/images/repair_work.png" alt="Письма мастера дзен"><center></p>
+                           <h4> <center> СТРАНИЦА В РАЗРАБОТКЕ <center/><h4/>
+                       </div>
+
 
 `)
 
