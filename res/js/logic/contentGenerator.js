@@ -19,7 +19,7 @@ var contentProduct = (`<div class="js-gallery-wrap">
                                        <img src="res/images/icon.png">
                                        <li><a href="final.html?page=main">Главная</a></li>
                                        <li><a href="final.html?page=products">Продукция</a></li>
-                                       <li><a href="final.html?page=products&typeId=13">{{TYPE}}</a></li>
+                                       <li><a href="final.html?page=products&typeId={{TYPE_ID}}">{{TYPE}}</a></li>
                                        <li>{{NAME}}</li>
                                     </ul>
                                  </div>
@@ -429,12 +429,36 @@ var contentMain = (`
                        </div>
                     </div>
                     `);
-var contentParts = (`
-СТРАНИЦА В РАЗРАБОТКЕ
+var contentParts = (`<div class="">
+                         <div id="quicknav">
+                           <div>
+                             <ul>
+                               <img src="./res/images/icon.png">
+                               <li>
+                                 <a href="final.html?page=main">Главная</a>
+                               </li>
+                               <li>Аксессуары и комплектующие</li>
+                             </ul>
+                           </div>
+                         </div>
+                         <h4> СТРАНИЦА В РАЗРАБОТКЕ <h4/>
+                     </div>
 
 `)
-var contentIntroduction = (`
-СТРАНИЦА В РАЗРАБОТКЕ
+var contentIntroduction = (`<div class="">
+                                <div id="quicknav">
+                                  <div>
+                                    <ul>
+                                      <img src="./res/images/icon.png">
+                                      <li>
+                                        <a href="final.html?page=main">Главная</a>
+                                      </li>
+                                      <li>О компании</li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <h4> СТРАНИЦА В РАЗРАБОТКЕ <h4/>
+                            </div>
 
 `)
 var contentContacts = (`
@@ -551,7 +575,8 @@ switch (page){
               .replace(/{{SHORT_SPECIFICATION}}/g, shortSpecificationFinal)
               .replace(/{{PRODUCT_IMG}}/g, product_img)
               .replace(/{{ADD_DESCRIPTION}}/g, additionalDescription)
-              .replace(/{{TYPE}}/g, type.name);
+              .replace(/{{TYPE}}/g, type.name)
+              .replace(/{{TYPE_ID}}/g, type.id);
 
               contentElement.insertAdjacentHTML('beforeEnd', contentProductFinal);
               generateSimilarProducts(productId);
