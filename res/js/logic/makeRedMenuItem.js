@@ -25,6 +25,9 @@ switch(makeToActive){
     case "products":
         foundClasses[1].setAttribute("class","nav-item dropdown active");
         break;
+    case "product":
+        foundClasses[1].setAttribute("class","nav-item dropdown active");
+        break;
     case "service":
         foundClasses[2].setAttribute("class","nav-item active");
         break;
