@@ -6,7 +6,7 @@ function generateMenu() {
             var rightNavElem = document.getElementById("navrightgenerated");
 
             for (i = 0; i < types.length; i++) {
-                var leftItem = " <li> <a href=\"final.html?page=products&typeId="+ types[i].id +"\""  + (i == 0?  "class=\"lidq\"":"") + ">" + types[i].name + "</a> </li>";
+                var leftItem = " <li onmouseover=\"showRightMenu("+i+")\"> <a href=\"final.html?page=products&typeId="+ types[i].id +"\""  + (i == 0?  "class=\"lidq\"":"") + ">" + types[i].name + " </a> </li>";
                 leftNavElem.insertAdjacentHTML("beforeend", leftItem);
 
                 var rightItem = "<ul " + (i==0? "class=\"shownavpro\"":"") + ">";
