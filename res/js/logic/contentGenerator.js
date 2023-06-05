@@ -542,7 +542,7 @@ var contentService = (`<div class="">
                                  <li>
                                    <a href="final.html?page=main">Главная</a>
                                  </li>
-                                 <li>О компании</li>
+                                 <li>Обслуживание</li>
                                </ul>
                              </div>
                            </div>
