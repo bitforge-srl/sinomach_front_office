@@ -12,7 +12,7 @@ function generateSimilarProducts(productId){
                                   {{SHORT_SPECIFICATION}}
                              </div>
                                   <a href="final.html?page=product&product_id={{PRODUCT_ID}}" class="more">
-                                    <img src="res/images/more1.png">
+                                    <img src="http://127.0.0.1:8080/api/image/get/922">
                                   </a>
                           </li>
                         </ol>

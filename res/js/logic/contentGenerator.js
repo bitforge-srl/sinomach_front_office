@@ -16,7 +16,7 @@ var contentProduct = (`<div class="js-gallery-wrap">
                               <div id="quicknav">
                                  <div>
                                     <ul class="nobg">
-                                       <img src="res/images/icon.png">
+                                       <img src="http://127.0.0.1:8080/api/image/get/912">
                                        <li><a href="final.html?page=main">Главная</a></li>
                                        <li><a href="final.html?page=products">Продукция</a></li>
                                        <li><a href="final.html?page=products&typeId={{TYPE_ID}}">{{TYPE}}</a></li>
@@ -43,9 +43,9 @@ var contentProduct = (`<div class="js-gallery-wrap">
                                     </div>
                                     <div class="col-12 col-md-5 order-first order-md-last">
                                        <div class="left_pic show_pro_video">
-                                          <div class="video_icon" data-video-path="en/guojizhonggong/wheel-loader-1_en">
+                                    <!--  <div class="video_icon" data-video-path="en/guojizhonggong/wheel-loader-1_en">
                                              <span class="youtube-play"></span> Видео
-                                          </div>
+                                          </div> -->
                                           <div class="left_pics">
                                              <figure><a href="product_image"><img
                                                 itemprop="image" src={{PRODUCT_IMG}}
@@ -86,7 +86,7 @@ var contentProduct = (`<div class="js-gallery-wrap">
                                     </div>
                                     <ul>
                                        <li>
-                                          <figure><img src="res/images/why_icon_01.png"></figure>
+                                          <figure><img src="http://127.0.0.1:8080/api/image/get/914"></figure>
                                           <div class="text">
                                              <em>Международная сеть обслуживания</em>
                                              <p>По мере нашего развития на зарубежных рынках штат нашей сервисной службы
@@ -96,7 +96,7 @@ var contentProduct = (`<div class="js-gallery-wrap">
                                           </div>
                                        </li>
                                        <li>
-                                          <figure><img src="res/images/why_icon_02.png"></figure>
+                                          <figure><img src="http://127.0.0.1:8080/api/image/get/915"></figure>
                                           <div class="text">
                                              <em>Качественные технологии на международном уровне</em>
                                              <p>SINOMACH-HI основала совместные предприятия со всемирно известными
@@ -105,7 +105,7 @@ var contentProduct = (`<div class="js-gallery-wrap">
                                           </div>
                                        </li>
                                        <li>
-                                          <figure><img src="res/images/why_icon_03.png"></figure>
+                                          <figure><img src="http://127.0.0.1:8080/api/image/get/916"></figure>
                                           <div class="text">
                                              <em>Высококвалифицированная международная команда специалистов, на которую
                                              всегда можно положиться.</em>
@@ -126,14 +126,14 @@ var contentProduct = (`<div class="js-gallery-wrap">
                                           <li>
                                              <ol>
                                                 <li class="product_img"><a href="final.html?page=products&typeId=13"><img
-                                                   src="res/images/typeImg/pro_02.png" alt="Excavator"></a></li>
+                                                   src="http://127.0.0.1:8080/api/image/get/605" alt="Excavator"></a></li>
                                                 <li class="product_con"><a href="final.html?page=products&typeId=13">Экскаватор</a></li>
                                              </ol>
                                           </li>
                                           <li>
                                              <ol>
                                                 <li class="product_img"><a href="final.html?page=products&typeId=7"><img
-                                                   src="res/images/typeImg/pro_03.png" alt="Автогрейдер "></a></li>
+                                                   src="http://127.0.0.1:8080/api/image/get/606" alt="Автогрейдер "></a></li>
                                                 <li class="product_con"><a href="final.html?page=products&typeId=7">Автогрейдер</a>
                                                 </li>
                                              </ol>
@@ -141,7 +141,7 @@ var contentProduct = (`<div class="js-gallery-wrap">
                                           <li>
                                              <ol>
                                                 <li class="product_img"><a href="final.html?page=products&typeId=3"><img
-                                                   src="res/images/typeImg/pro_04.png" alt="Дорожный каток "></a></li>
+                                                   src="http://127.0.0.1:8080/api/image/get/602" alt="Дорожный каток "></a></li>
                                                 <li class="product_con"><a href="final.html?page=products&typeId=3">Дорожный каток</a>
                                                 </li>
                                              </ol>
@@ -149,7 +149,7 @@ var contentProduct = (`<div class="js-gallery-wrap">
                                           <li>
                                              <ol>
                                                 <li class="product_img"><a href="final.html?page=products&typeId=4"><img
-                                                   src="res/images/typeImg/pro_05.png" alt="Bulldozer"></a></li>
+                                                   src="http://127.0.0.1:8080/api/image/get/604" alt="Bulldozer"></a></li>
                                                 <li class="product_con"><a href="final.html?page=products&typeId=4">Бульдозер</a></li>
                                              </ol>
                                           </li>
@@ -164,21 +164,22 @@ var contentProduct = (`<div class="js-gallery-wrap">
                                        <ul>
                                           <li>
                                              <a href="final.html?page=service" class="images"><img
-                                                src="res/images/service_03.jpg"></a>
+                                                src="http://127.0.0.1:8080/api/image/get/920"></a>
                                              <div class="text">
                                                 <a href="final.html?page=service" class="title">Международное
                                                 обслуживание</a>
                                              </div>
                                           </li>
                                           <li>
-                                             <a href="final.html?page=service" class="images"><img
-                                                src="res/images/service_01.jpg"></a>
+                                             <a href="final.html?page=service" class="images">
+                                             <img src="http://127.0.0.1:8080/api/image/get/918"></a>
                                              <div class="text">
                                                 <a href="final.html?page=service" class="title">Обслуживание</a>
                                              </div>
                                           </li>
                                           <li>
-                                             <a href="final.html?page=parts" class="images"><img src="res/images/service_02.jpg"></a>
+                                             <a href="final.html?page=parts" class="images">
+                                             <img src="http://127.0.0.1:8080/api/image/get/919"></a>
                                              <div class="text">
                                                 <a href="final.html?page=parts" class="title">Запчасти</a>
                                              </div>
@@ -207,7 +208,7 @@ var contentMain = (`
                           </div>
                           <div class="about_right">
                              <figure>
-                                <img src="./res/images/about_us.jpg">
+                                <img src="http://127.0.0.1:8080/api/image/get/910"  >
                              </figure>
                              <p>В конце прошлого века мы основали два совместных предприятия с Komatsu и Hyundai. Кроме того, мы
                                 начали поставлять OEM-запчасти для TEREX, ATLAS и других международных компаний.
@@ -235,7 +236,7 @@ var contentMain = (`
                                    <ol>
                                       <li class="product_img">
                                          <a href="final.html?page=products&typeId=11">
-                                         <img src="./res/images/typeImg/pro_01.png" alt="Колесный погрузчик">
+                                         <img src="http://127.0.0.1:8080/api/image/get/603" alt="Колесный погрузчик">
                                          </a>
                                       </li>
                                       <li class="product_con">
@@ -247,7 +248,7 @@ var contentMain = (`
                                    <ol>
                                       <li class="product_img">
                                          <a href="final.html?page=products&typeId=13">
-                                         <img src="./res/images/typeImg/pro_02.png" alt="Excavator">
+                                         <img src="http://127.0.0.1:8080/api/image/get/605" alt="Excavator">
                                          </a>
                                       </li>
                                       <li class="product_con">
@@ -263,7 +264,7 @@ var contentMain = (`
                                    <ol>
                                       <li class="product_img">
                                          <a href="final.html?page=products&typeId=11">
-                                         <img src="./res/images/typeImg/pro_01.png" alt="Колесный погрузчик">
+                                         <img src="http://127.0.0.1:8080/api/image/get/603" alt="Колесный погрузчик">
                                          </a>
                                       </li>
                                       <li class="product_con">
@@ -275,7 +276,7 @@ var contentMain = (`
                                    <ol>
                                       <li class="product_img">
                                          <a href="final.html?page=products&typeId=13">
-                                         <img src="./res/images/typeImg/pro_02.png" alt="Excavator">
+                                         <img src="http://127.0.0.1:8080/api/image/get/605" alt="Excavator">
                                          </a>
                                       </li>
                                       <li class="product_con">
@@ -287,7 +288,7 @@ var contentMain = (`
                                    <ol>
                                       <li class="product_img">
                                          <a href="final.html?page=products&typeId=7">
-                                         <img src="./res/images/typeImg/pro_03.png" alt="Автогрейдер">
+                                         <img src="http://127.0.0.1:8080/api/image/get/606" alt="Автогрейдер">
                                          </a>
                                       </li>
                                       <li class="product_con">
@@ -299,7 +300,7 @@ var contentMain = (`
                                    <ol>
                                       <li class="product_img">
                                          <a href="final.html?page=products&typeId=3">
-                                         <img src="./res/images/typeImg/pro_04.png" alt="Excavator">
+                                         <img src="http://127.0.0.1:8080/api/image/get/602" alt="Excavator">
                                          </a>
                                       </li>
                                       <li class="product_con">
@@ -311,7 +312,7 @@ var contentMain = (`
                                    <ol>
                                       <li class="product_img">
                                          <a href="final.html?page=products&typeId=4">
-                                         <img src="./res/images/typeImg/pro_05.png" alt="Excavator">
+                                         <img src="http://127.0.0.1:8080/api/image/get/604" alt="Excavator">
                                          </a>
                                       </li>
                                       <li class="product_con">
@@ -323,7 +324,7 @@ var contentMain = (`
                                    <ol>
                                       <li class="product_img">
                                          <a href="final.html?page=products&typeId=8">
-                                         <img src="./res/images/typeImg/pro_06.png" alt="Excavator">
+                                         <img src="http://127.0.0.1:8080/api/image/get/609" alt="Excavator">
                                          </a>
                                       </li>
                                       <li class="product_con">
@@ -335,7 +336,7 @@ var contentMain = (`
                                    <ol>
                                       <li class="product_img">
                                          <a href="final.html?page=products&typeId=10">
-                                         <img src="./res/images/typeImg/pro_07.png" alt="Excavator">
+                                         <img src="http://127.0.0.1:8080/api/image/get/610" alt="Excavator">
                                          </a>
                                       </li>
                                       <li class="product_con">
@@ -347,19 +348,19 @@ var contentMain = (`
                                    <ol>
                                       <li class="product_img">
                                          <a href="final.html?page=product&product_id=102">
-                                         <img src="./res/images/typeImg/pro_08.png" alt="Колесный экскаватор">
+                                         <img src="http://127.0.0.1:8080/api/image/get/547" alt="Колесный экскаватор">
                                          </a>
                                       </li>
                                       <li class="product_con">
                                          <a href="final.html?page=product&product_id=102">Колесный экскаватор</a>
                                       </li>
                                    </ol>
-                                </li>
+                                </li> 
                                 <li>
                                    <ol>
                                       <li class="product_img">
                                          <a href="final.html?page=products&typeId=5">
-                                         <img src="./res/images/typeImg/pro_09.png" alt="Excavator">
+                                         <img src="http://127.0.0.1:8080/api/image/get/608" alt="Excavator">
                                          </a>
                                       </li>
                                       <li class="product_con">
@@ -371,7 +372,7 @@ var contentMain = (`
                                    <ol>
                                       <li class="product_img">
                                          <a href="final.html?page=products&typeId=12">
-                                         <img src="./res/images/typeImg/pro_10.png" alt="Excavator">
+                                         <img src="http://127.0.0.1:8080/api/image/get/613" alt="Excavator">
                                          </a>
                                       </li>
                                       <li class="product_con">
@@ -391,7 +392,7 @@ var contentMain = (`
                           <ul>
                              <li>
                                 <figure>
-                                   <img src="./res/images/why_icon_01.png" alt="Международная сеть обслуживания">
+                                   <img src="http://127.0.0.1:8080/api/image/get/914" alt="Международная сеть обслуживания">
                                 </figure>
                                 <div class="text">
                                    <em>Международная сеть обслуживания</em>
@@ -402,7 +403,7 @@ var contentMain = (`
                              </li>
                              <li>
                                 <figure>
-                                   <img src="./res/images/why_icon_02.png" alt="Качественные технологии на международном уровне">
+                                   <img src="http://127.0.0.1:8080/api/image/get/915" alt="Качественные технологии на международном уровне">
                                 </figure>
                                 <div class="text">
                                    <em>Качественные технологии на международном уровне</em>
@@ -413,7 +414,7 @@ var contentMain = (`
                              </li>
                              <li>
                                 <figure>
-                                   <img src="./res/images/why_icon_03.png"
+                                   <img src="http://127.0.0.1:8080/api/image/get/916"
                                       alt="Высококвалифицированная международная команда специалистов, на которую всегда можно положиться.">
                                 </figure>
                                 <div class="text">
@@ -433,7 +434,7 @@ var contentParts = (`<div class="">
                          <div id="quicknav">
                            <div>
                              <ul>
-                               <img src="./res/images/icon.png">
+                               <img src="http://127.0.0.1:8080/api/image/get/911">
                                <li>
                                  <a href="final.html?page=main">Главная</a>
                                </li>
@@ -441,7 +442,7 @@ var contentParts = (`<div class="">
                              </ul>
                            </div>
                          </div>
-                         <p><center><img src="./res/images/repair_work.png" alt="Письма мастера дзен"><center></p>
+                         <p><center><img src="http://127.0.0.1:8080/api/image/get/913" alt="Письма мастера дзен"><center></p>
                          <h4> <center> СТРАНИЦА В РАЗРАБОТКЕ <center/><h4/>
                      </div>
 
@@ -450,7 +451,7 @@ var contentIntroduction = (`<div class="">
                                 <div id="quicknav">
                                   <div>
                                     <ul>
-                                      <img src="./res/images/icon.png">
+                                      <img src="http://127.0.0.1:8080/api/image/get/911">
                                       <li>
                                         <a href="final.html?page=main">Главная</a>
                                       </li>
@@ -458,7 +459,7 @@ var contentIntroduction = (`<div class="">
                                     </ul>
                                   </div>
                                 </div>
-                               <p><center><img src="./res/images/repair_work.png" alt="Письма мастера дзен"><center></p>
+                               <p><center><img src="http://127.0.0.1:8080/api/image/get/913" alt="Письма мастера дзен"><center></p>
                                <h4> <center> СТРАНИЦА В РАЗРАБОТКЕ <center/><h4/>
                             </div>
 
@@ -468,7 +469,7 @@ var contentContacts = (`
                         <div id="quicknav">
                           <div>
                             <ul>
-                              <img src="./res/images/icon.png">
+                              <img src="http://127.0.0.1:8080/api/image/get/911">
                               <li>
                                 <a href="final.html?page=main">Главная</a>
                               </li>
@@ -483,7 +484,7 @@ var contentContacts = (`
                               <div class="col-md-6">
                                 <div class="contact_des ">
                                   <content>
-                                    <img src="./res/images/bottom_logo.png" alt="SINOMACH-HI International" class="mb-4">
+                                    <img src="http://127.0.0.1:8080/api/image/get/917" alt="SINOMACH-HI International" class="mb-4">
                                     <p>
                                       <strong> Официальные представители в Республике Молдова</strong>
                                     </p>
@@ -538,7 +539,7 @@ var contentService = (`<div class="">
                            <div id="quicknav">
                              <div>
                                <ul>
-                                 <img src="./res/images/icon.png">
+                                 <img src="http://127.0.0.1:8080/api/image/get/911">
                                  <li>
                                    <a href="final.html?page=main">Главная</a>
                                  </li>
@@ -546,10 +547,9 @@ var contentService = (`<div class="">
                                </ul>
                              </div>
                            </div>
-                           <p><center><img src="./res/images/repair_work.png" alt="Письма мастера дзен"><center></p>
+                           <p><center><img src="http://127.0.0.1:8080/api/image/get/913" alt="Письма мастера дзен"><center></p>
                            <h4> <center> СТРАНИЦА В РАЗРАБОТКЕ <center/><h4/>
                        </div>
-
 
 `)
 

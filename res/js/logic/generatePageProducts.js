@@ -19,7 +19,7 @@ function generatePageProducts(contentElement) {
     var navigation = (` <div id="quicknav">
                            <div>
                                <ul>
-                                   <img src="res/images/icon.png">
+                                   <img src="http://127.0.0.1:8080/api/image/get/911">
                                    <li><a href="final.html?page=main">Главная</a></li>
                                    <li>Продукция</li>
                                </ul>
@@ -73,75 +73,79 @@ function generatePageProducts(contentElement) {
 
     var allProducts = "";
 
-    var url = "https://cn-sinomach.md/api/type/all";
+    let imgId = 0;
+
+    var url = "http://127.0.0.1:8080/api/type/all";
 
     var contentElementInner = document.getElementById("pageProducts");
 
-    var jqxhr = $.get( url, function(response) {
+    var jqxhr = $.get(url, function (response) {
 
-             if (response.success == false){
-                 return;
-             }
+        if (response.success == false) {
+            return;
+        }
 
-            for (i=0; i<response.length; i++){
-                var nameType = response[i].name;
-                var tmpType = templateType.replaceAll("{{TYPE}}", nameType)
+        for (i = 0; i < response.length; i++) {
+            var nameType = response[i].name;
+            var tmpType = templateType.replaceAll("{{TYPE}}", nameType)
                 .replaceAll("{{TYPE_ID}}", response[i].id)
                 .replaceAll("{{SHORT_TYPE_DESCRIPTION}}", response[i].shortDescription);
-                contentElementInner.insertAdjacentHTML('beforeEnd', tmpType);
+            contentElementInner.insertAdjacentHTML('beforeEnd', tmpType);
 
-                var contentInnerType = document.getElementById("typeId="+response[i].id);
+            var contentInnerType = document.getElementById("typeId=" + response[i].id);
 
-                for(j=0; j < response[i].subTypes.length; j++){
-                    if(response[i].subTypes[j].name =="default"){
-                        var nameSubType = "";
-                    }else{
-                        nameSubType = response[i].subTypes[j].name;
-                    }
-                    var tmpSubType = templateSubType.replaceAll("{{SUB_TYPE}}",nameSubType)
+            for (j = 0; j < response[i].subTypes.length; j++) {
+                if (response[i].subTypes[j].name == "default") {
+                    var nameSubType = "";
+                } else {
+                    nameSubType = response[i].subTypes[j].name;
+                }
+                var tmpSubType = templateSubType.replaceAll("{{SUB_TYPE}}", nameSubType)
                     .replaceAll("{{SUB_TYPE_ID}}", response[i].subTypes[j].id);
-                    contentInnerType.insertAdjacentHTML('beforeEnd', tmpSubType);
+                contentInnerType.insertAdjacentHTML('beforeEnd', tmpSubType);
 
-                var contentInnerSubType = document.getElementById("subTypeId="+ response[i].subTypes[j].id);
+                var contentInnerSubType = document.getElementById("subTypeId=" + response[i].subTypes[j].id);
 
-                    for(k=0; k< response[i].subTypes[j].products.length; k++){
+                for (k = 0; k < response[i].subTypes[j].products.length; k++) {
 
-                        var shortSpecification = "";
-                        var shortSpecs = JSON.parse(response[i].subTypes[j].products[k].shortSpecification);
-                        var keys = Object.keys(shortSpecs);
+                    var shortSpecification = "";
+                    var shortSpecs = JSON.parse(response[i].subTypes[j].products[k].shortSpecification);
+                    var keys = Object.keys(shortSpecs);
 
-                        for(h=0; h<keys.length; h++){
-                            shortSpecification = shortSpecification +
-                            "<li>" + keys[h]+ "<span>" + shortSpecs[keys[h]] +"</span></li>"
-                        }
+                    for (h = 0; h < keys.length; h++) {
+                        shortSpecification = shortSpecification +
+                            "<li>" + keys[h] + "<span>" + shortSpecs[keys[h]] + "</span></li>"
+                    }
 
-                        var tmpProduct = templateProduct.replaceAll("{{NAME}}",response[i].subTypes[j].products[k].name)
-                        .replaceAll("{{PRODUCT_IMG}}", response[i].subTypes[j].products[k].img)
+                    var tmpProduct = templateProduct.replaceAll("{{NAME}}", response[i].subTypes[j].products[k].name)
+                        .replaceAll("{{PRODUCT_IMG}}", "http://127.0.0.1:8080/api/image/get/" + response[i].subTypes[j].products[k].imgId)
                         .replaceAll("{{PRODUCT_ID}}", response[i].subTypes[j].products[k].id)
                         .replaceAll("{{TYPE}}", nameType)
-                        .replaceAll("{{SHORT_SPECIFICATION}}",shortSpecification );
+                        .replaceAll("{{SHORT_SPECIFICATION}}", shortSpecification);
 
-                        contentInnerSubType.insertAdjacentHTML('beforeEnd', tmpProduct);
+                    console.log("Product", response[i].subTypes[j].products[k])
 
-                    }
+                    contentInnerSubType.insertAdjacentHTML('beforeEnd', tmpProduct);
+
                 }
             }
+        }
 
-            if(typeId>0){
-                const element = document.getElementById(typeId);
-                element.scrollIntoView({block: "start", inline: "nearest"});
-                window.scrollBy(0,-63);
-            }
+        if (typeId > 0) {
+            const element = document.getElementById(typeId);
+            element.scrollIntoView({block: "start", inline: "nearest"});
+            window.scrollBy(0, -63);
+        }
 
 
-        }).done(function() {
-            console.log("PageProducts generated");
+    }).done(function () {
+        console.log("PageProducts generated");
+    })
+        .fail(function () {
+            console.log("error generate PageProducts");
         })
-         .fail(function() {
-             console.log("error generate PageProducts");
-        })
-        .always(function() {
-             console.log("finished generate PageProducts");
+        .always(function () {
+            console.log("finished generate PageProducts");
         });
 
 }
