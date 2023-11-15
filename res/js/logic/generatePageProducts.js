@@ -19,7 +19,7 @@ function generatePageProducts(contentElement) {
     var navigation = (` <div id="quicknav">
                            <div>
                                <ul>
-                                   <img src="http://127.0.0.1:8080/api/image/get/911">
+                                   <img src="res/images/icon.png">
                                    <li><a href="final.html?page=main">Главная</a></li>
                                    <li>Продукция</li>
                                </ul>

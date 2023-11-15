@@ -16,14 +16,14 @@ var contentProduct = (`<div class="js-gallery-wrap">
                               <div id="quicknav">
                                  <div>
                                     <ul class="nobg">
-                                       <img src="http://127.0.0.1:8080/api/image/get/912">
+                                       <img src="res/images/icon.png">
                                        <li><a href="final.html?page=main">Главная</a></li>
                                        <li><a href="final.html?page=products">Продукция</a></li>
                                        <li><a href="final.html?page=products&typeId={{TYPE_ID}}">{{TYPE}}</a></li>
                                        <li>{{NAME}}</li>
                                     </ul>
                                  </div>
-                              </div>  
+                              </div>
                               <div class="clearfix"></div>
                               <div class="content pt-5 pb-5 clearfix">
                                  <div class="row pt-1">
@@ -86,7 +86,7 @@ var contentProduct = (`<div class="js-gallery-wrap">
                                     </div>
                                     <ul>
                                        <li>
-                                          <figure><img src="http://127.0.0.1:8080/api/image/get/914"></figure>
+                                          <figure><img src="res/images/why_icon_01.png"></figure>
                                           <div class="text">
                                              <em>Международная сеть обслуживания</em>
                                              <p>По мере нашего развития на зарубежных рынках штат нашей сервисной службы
@@ -96,7 +96,7 @@ var contentProduct = (`<div class="js-gallery-wrap">
                                           </div>
                                        </li>
                                        <li>
-                                          <figure><img src="http://127.0.0.1:8080/api/image/get/915"></figure>
+                                          <figure><img src="res/images/why_icon_02.png"></figure>
                                           <div class="text">
                                              <em>Качественные технологии на международном уровне</em>
                                              <p>SINOMACH-HI основала совместные предприятия со всемирно известными
@@ -105,7 +105,7 @@ var contentProduct = (`<div class="js-gallery-wrap">
                                           </div>
                                        </li>
                                        <li>
-                                          <figure><img src="http://127.0.0.1:8080/api/image/get/916"></figure>
+                                          <figure><img src="res/images/why_icon_03.png"></figure>
                                           <div class="text">
                                              <em>Высококвалифицированная международная команда специалистов, на которую
                                              всегда можно положиться.</em>
@@ -164,22 +164,21 @@ var contentProduct = (`<div class="js-gallery-wrap">
                                        <ul>
                                           <li>
                                              <a href="final.html?page=service" class="images"><img
-                                                src="http://127.0.0.1:8080/api/image/get/920"></a>
+                                                src="res/images/service_03.jpg"></a>
                                              <div class="text">
                                                 <a href="final.html?page=service" class="title">Международное
                                                 обслуживание</a>
                                              </div>
                                           </li>
                                           <li>
-                                             <a href="final.html?page=service" class="images">
-                                             <img src="http://127.0.0.1:8080/api/image/get/918"></a>
+                                             <a href="final.html?page=service" class="images"><img
+                                                src="res/images/service_01.jpg"></a>
                                              <div class="text">
                                                 <a href="final.html?page=service" class="title">Обслуживание</a>
                                              </div>
                                           </li>
                                           <li>
-                                             <a href="final.html?page=parts" class="images">
-                                             <img src="http://127.0.0.1:8080/api/image/get/919"></a>
+                                             <a href="final.html?page=parts" class="images"><img src="res/images/service_02.jpg"></a>
                                              <div class="text">
                                                 <a href="final.html?page=parts" class="title">Запчасти</a>
                                              </div>
@@ -208,7 +207,7 @@ var contentMain = (`
                           </div>
                           <div class="about_right">
                              <figure>
-                                <img src="http://127.0.0.1:8080/api/image/get/910"  >
+                                <img src="./res/images/about_us.jpg">
                              </figure>
                              <p>В конце прошлого века мы основали два совместных предприятия с Komatsu и Hyundai. Кроме того, мы
                                 начали поставлять OEM-запчасти для TEREX, ATLAS и других международных компаний.
@@ -250,7 +249,7 @@ var contentMain = (`
                           <ul>
                              <li>
                                 <figure>
-                                   <img src="http://127.0.0.1:8080/api/image/get/914" alt="Международная сеть обслуживания">
+                                   <img src="./res/images/why_icon_01.png" alt="Международная сеть обслуживания">
                                 </figure>
                                 <div class="text">
                                    <em>Международная сеть обслуживания</em>
@@ -261,7 +260,7 @@ var contentMain = (`
                              </li>
                              <li>
                                 <figure>
-                                   <img src="http://127.0.0.1:8080/api/image/get/915" alt="Качественные технологии на международном уровне">
+                                   <img src="./res/images/why_icon_02.png" alt="Качественные технологии на международном уровне">
                                 </figure>
                                 <div class="text">
                                    <em>Качественные технологии на международном уровне</em>
@@ -272,7 +271,7 @@ var contentMain = (`
                              </li>
                              <li>
                                 <figure>
-                                   <img src="http://127.0.0.1:8080/api/image/get/916"
+                                   <img src="./res/images/why_icon_03.png"
                                       alt="Высококвалифицированная международная команда специалистов, на которую всегда можно положиться.">
                                 </figure>
                                 <div class="text">
@@ -292,7 +291,7 @@ var contentParts = (`<div class="">
                          <div id="quicknav">
                            <div>
                              <ul>
-                               <img src="http://127.0.0.1:8080/api/image/get/911">
+                               <img src="./res/images/icon.png">
                                <li>
                                  <a href="final.html?page=main">Главная</a>
                                </li>
@@ -300,7 +299,7 @@ var contentParts = (`<div class="">
                              </ul>
                            </div>
                          </div>
-                         <p><center><img src="http://127.0.0.1:8080/api/image/get/913" alt="Письма мастера дзен"><center></p>
+                         <p><center><img src="./res/images/repair_work.png" alt="Письма мастера дзен"><center></p>
                          <h4> <center> СТРАНИЦА В РАЗРАБОТКЕ <center/><h4/>
                      </div>
 
@@ -309,7 +308,7 @@ var contentIntroduction = (`<div class="">
                                 <div id="quicknav">
                                   <div>
                                     <ul>
-                                      <img src="http://127.0.0.1:8080/api/image/get/911">
+                                      <img src="./res/images/icon.png">
                                       <li>
                                         <a href="final.html?page=main">Главная</a>
                                       </li>
@@ -317,7 +316,7 @@ var contentIntroduction = (`<div class="">
                                     </ul>
                                   </div>
                                 </div>
-                               <p><center><img src="http://127.0.0.1:8080/api/image/get/913" alt="Письма мастера дзен"><center></p>
+                               <p><center><img src="./res/images/repair_work.png" alt="Письма мастера дзен"><center></p>
                                <h4> <center> СТРАНИЦА В РАЗРАБОТКЕ <center/><h4/>
                             </div>
 
@@ -327,7 +326,7 @@ var contentContacts = (`
                         <div id="quicknav">
                           <div>
                             <ul>
-                              <img src="http://127.0.0.1:8080/api/image/get/911">
+                              <img src="./res/images/icon.png">
                               <li>
                                 <a href="final.html?page=main">Главная</a>
                               </li>
@@ -342,7 +341,7 @@ var contentContacts = (`
                               <div class="col-md-6">
                                 <div class="contact_des ">
                                   <content>
-                                    <img src="http://127.0.0.1:8080/api/image/get/917" alt="SINOMACH-HI International" class="mb-4">
+                                    <img src="./res/images/bottom_logo.png" alt="SINOMACH-HI International" class="mb-4">
                                     <p>
                                       <strong> Официальные представители в Республике Молдова</strong>
                                     </p>
@@ -397,7 +396,7 @@ var contentService = (`<div class="">
                            <div id="quicknav">
                              <div>
                                <ul>
-                                 <img src="http://127.0.0.1:8080/api/image/get/911">
+                                 <img src="./res/images/icon.png">
                                  <li>
                                    <a href="final.html?page=main">Главная</a>
                                  </li>
@@ -405,7 +404,7 @@ var contentService = (`<div class="">
                                </ul>
                              </div>
                            </div>
-                           <p><center><img src="http://127.0.0.1:8080/api/image/get/913" alt="Письма мастера дзен"><center></p>
+                           <p><center><img src="./res/images/repair_work.png" alt="Письма мастера дзен"><center></p>
                            <h4> <center> СТРАНИЦА В РАЗРАБОТКЕ <center/><h4/>
                        </div>
 

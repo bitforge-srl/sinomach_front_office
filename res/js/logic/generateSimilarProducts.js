@@ -12,7 +12,7 @@ function generateSimilarProducts(productId){
                                   {{SHORT_SPECIFICATION}}
                              </div>
                                   <a href="final.html?page=product&product_id={{PRODUCT_ID}}" class="more">
-                                    <img src="http://127.0.0.1:8080/api/image/get/922">
+                                    <img src="res/images/more1.png">
                                   </a>
                           </li>
                         </ol>
@@ -20,7 +20,7 @@ function generateSimilarProducts(productId){
 
     var productId = getQueryParam("product_id");
 
-    var url = "https://cn-sinomach.md/api/similar_product/"+ productId;
+    var url = HOST+"/api/similar_product/"+ productId;
 
     var contentElement = document.getElementById("similarProducts");
 
