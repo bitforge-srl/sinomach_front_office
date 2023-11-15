@@ -1,7 +1,7 @@
 generateMenu();
 
 function generateMenu() {
-    var jqxhr = $.get("https://cn-sinomach.md/api/type/all", function(types) {
+    var jqxhr = $.get(HOST+ "/api/type/all", function(types) {
             var leftNavElem = document.getElementById("navleftgenerated");
             var rightNavElem = document.getElementById("navrightgenerated");
 

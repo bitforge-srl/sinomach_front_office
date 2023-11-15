@@ -75,7 +75,7 @@ function generatePageProducts(contentElement) {
 
     let imgId = 0;
 
-    var url = "http://127.0.0.1:8080/api/type/all";
+    var url =HOST +  "/api/type/all";
 
     var contentElementInner = document.getElementById("pageProducts");
 
@@ -118,7 +118,7 @@ function generatePageProducts(contentElement) {
                     }
 
                     var tmpProduct = templateProduct.replaceAll("{{NAME}}", response[i].subTypes[j].products[k].name)
-                        .replaceAll("{{PRODUCT_IMG}}", "http://127.0.0.1:8080/api/image/get/" + response[i].subTypes[j].products[k].imgId)
+                        .replaceAll("{{PRODUCT_IMG}}", HOST +"/api/image/get/" + response[i].subTypes[j].products[k].imgId)
                         .replaceAll("{{PRODUCT_ID}}", response[i].subTypes[j].products[k].id)
                         .replaceAll("{{TYPE}}", nameType)
                         .replaceAll("{{SHORT_SPECIFICATION}}", shortSpecification);

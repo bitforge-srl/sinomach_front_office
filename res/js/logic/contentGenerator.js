@@ -6,7 +6,7 @@ function getQueryParam(item) {
 
 var page = getQueryParam("page") || "main";
 var productId = getQueryParam("product_id");
-var url = "https://cn-sinomach.md/api/product_page/"+ productId;
+var url = HOST + "/api/product_page/"+ productId;
 
 var contentElement = document.getElementById("container");
 var contentProduct = (`<div class="js-gallery-wrap">
@@ -23,7 +23,7 @@ var contentProduct = (`<div class="js-gallery-wrap">
                                        <li>{{NAME}}</li>
                                     </ul>
                                  </div>
-                              </div>
+                              </div>  
                               <div class="clearfix"></div>
                               <div class="content pt-5 pb-5 clearfix">
                                  <div class="row pt-1">
@@ -232,154 +232,12 @@ var contentMain = (`
                                 </p>
                              </div>
                              <ul>
-                                <li>
-                                   <ol>
-                                      <li class="product_img">
-                                         <a href="final.html?page=products&typeId=11">
-                                         <img src="http://127.0.0.1:8080/api/image/get/603" alt="Колесный погрузчик">
-                                         </a>
-                                      </li>
-                                      <li class="product_con">
-                                         <a href="final.html?page=products&typeId=11">Колесный погрузчик</a>
-                                      </li>
-                                   </ol>
-                                </li>
-                                <li>
-                                   <ol>
-                                      <li class="product_img">
-                                         <a href="final.html?page=products&typeId=13">
-                                         <img src="http://127.0.0.1:8080/api/image/get/605" alt="Excavator">
-                                         </a>
-                                      </li>
-                                      <li class="product_con">
-                                         <a href="final.html?page=products&typeId=13">Экскаватор</a>
-                                      </li>
-                                   </ol>
-                                </li>
+                                {{TWO_TYPES}}
                              </ul>
                           </div>
                           <div class="bottom_pro">
                              <ul>
-                                <li>
-                                   <ol>
-                                      <li class="product_img">
-                                         <a href="final.html?page=products&typeId=11">
-                                         <img src="http://127.0.0.1:8080/api/image/get/603" alt="Колесный погрузчик">
-                                         </a>
-                                      </li>
-                                      <li class="product_con">
-                                         <a href="final.html?page=products&typeId=11">Колесный погрузчик</a>
-                                      </li>
-                                   </ol>
-                                </li>
-                                <li>
-                                   <ol>
-                                      <li class="product_img">
-                                         <a href="final.html?page=products&typeId=13">
-                                         <img src="http://127.0.0.1:8080/api/image/get/605" alt="Excavator">
-                                         </a>
-                                      </li>
-                                      <li class="product_con">
-                                         <a href="final.html?page=products&typeId=13">Экскаватор</a>
-                                      </li>
-                                   </ol>
-                                </li>
-                                <li>
-                                   <ol>
-                                      <li class="product_img">
-                                         <a href="final.html?page=products&typeId=7">
-                                         <img src="http://127.0.0.1:8080/api/image/get/606" alt="Автогрейдер">
-                                         </a>
-                                      </li>
-                                      <li class="product_con">
-                                         <a href="final.html?page=products&typeId=7">Автогрейдер</a>
-                                      </li>
-                                   </ol>
-                                </li>
-                                <li>
-                                   <ol>
-                                      <li class="product_img">
-                                         <a href="final.html?page=products&typeId=3">
-                                         <img src="http://127.0.0.1:8080/api/image/get/602" alt="Excavator">
-                                         </a>
-                                      </li>
-                                      <li class="product_con">
-                                         <a href="final.html?page=products&typeId=3">Дорожный каток</a>
-                                      </li>
-                                   </ol>
-                                </li>
-                                <li>
-                                   <ol>
-                                      <li class="product_img">
-                                         <a href="final.html?page=products&typeId=4">
-                                         <img src="http://127.0.0.1:8080/api/image/get/604" alt="Excavator">
-                                         </a>
-                                      </li>
-                                      <li class="product_con">
-                                         <a href="final.html?page=products&typeId=4">Бульдозер</a>
-                                      </li>
-                                   </ol>
-                                </li>
-                                <li>
-                                   <ol>
-                                      <li class="product_img">
-                                         <a href="final.html?page=products&typeId=8">
-                                         <img src="http://127.0.0.1:8080/api/image/get/609" alt="Excavator">
-                                         </a>
-                                      </li>
-                                      <li class="product_con">
-                                         <a href="final.html?page=products&typeId=8">Экскаватор-погрузчик</a>
-                                      </li>
-                                   </ol>
-                                </li>
-                                <li>
-                                   <ol>
-                                      <li class="product_img">
-                                         <a href="final.html?page=products&typeId=10">
-                                         <img src="http://127.0.0.1:8080/api/image/get/610" alt="Excavator">
-                                         </a>
-                                      </li>
-                                      <li class="product_con">
-                                         <a href="final.html?page=products&typeId=10">Погрузчик с бортовым поворотом</a>
-                                      </li>
-                                   </ol>
-                                </li>
-                                <li>
-                                   <ol>
-                                      <li class="product_img">
-                                         <a href="final.html?page=product&product_id=102">
-                                         <img src="http://127.0.0.1:8080/api/image/get/547" alt="Колесный экскаватор">
-                                         </a>
-                                      </li>
-                                      <li class="product_con">
-                                         <a href="final.html?page=product&product_id=102">Колесный экскаватор</a>
-                                      </li>
-                                   </ol>
-                                </li> 
-                                <li>
-                                   <ol>
-                                      <li class="product_img">
-                                         <a href="final.html?page=products&typeId=5">
-                                         <img src="http://127.0.0.1:8080/api/image/get/608" alt="Excavator">
-                                         </a>
-                                      </li>
-                                      <li class="product_con">
-                                         <a href="final.html?page=products&typeId=5">Асфальтоукладчик</a>
-                                      </li>
-                                   </ol>
-                                </li>
-                                <li>
-                                   <ol>
-                                      <li class="product_img">
-                                         <a href="final.html?page=products&typeId=12">
-                                         <img src="http://127.0.0.1:8080/api/image/get/613" alt="Excavator">
-                                         </a>
-                                      </li>
-                                      <li class="product_con">
-                                         <a href="final.html?page=products&typeId=12">Вилочный погрузчик</a>
-                                      </li>
-                                   </ol>
-                                </li>
+                                {{ALL_TYPES}}
                              </ul>
                           </div>
                        </div>
@@ -627,7 +485,46 @@ switch (page){
         break;
     case "main":
     default:
-       contentElement.insertAdjacentHTML('beforeEnd', contentMain);
 
+        var typeDescription = (`
+          <li>
+            <ol>
+                <li class="product_img">
+                    <a href="final.html?page=products&typeId={{TYPE_ID}}">
+                        <img src="{{TYPE_IMAGE}}" alt="{{TYPE_NAME}}">
+                    </a>
+                </li>
+                <li class="product_con">
+                    <a href="final.html?page=products&typeId={{TYPE_ID}}">{{TYPE_NAME}}</a>
+                </li>
+            </ol>
+        </li>
+         `);
 
+        var jqxhr = $.get(HOST+ "/api/type/all", function(types) {
+            var allDesc=[];
+
+            for (i = 0; i < types.length; i++) {
+                var type = types[i];
+                var typeId = type.id;
+                var typeImage = HOST+"/api/image/get/" + type.imgId;
+                var typeName = type.name;
+                allDesc[i]=  typeDescription
+                    .replace(/{{TYPE_IMAGE}}/g,typeImage)
+                    .replace(/{{TYPE_NAME}}/g,typeName)
+                    .replace(/{{TYPE_ID}}/g,typeId)
+
+            }
+
+            var two = allDesc[0]+ allDesc[1];
+            var all ='';
+            for (let i = 0; i < allDesc.length; i++) {
+                all= all+ allDesc[i];
+            }
+
+            contentElement.insertAdjacentHTML('beforeEnd', contentMain
+                .replace(/{{TWO_TYPES}}/g,two)
+                .replace(/{{ALL_TYPES}}/g,all)
+            );
+        });
 }
