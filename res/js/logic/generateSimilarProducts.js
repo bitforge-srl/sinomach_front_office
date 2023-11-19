@@ -1,28 +1,23 @@
 
 function generateSimilarProducts(productId){
     var template = (`<li class="swiper-slide">
-                        <ol>
-                           <li class="product_img"><a href="final.html?page=product&product_id={{PRODUCT_ID}}"><img
-                              src={{PRODUCT_IMG}}
-                              alt="{{TYPE}} {{NAME}}"></a>
-                           </li>
-                          <li class="product_con">
-                            <a href="final.html?page=product&product_id={{PRODUCT_ID}}">{{TYPE}} <span>{{NAME}}</span></a>
-                             <div class="text">
-                                  {{SHORT_SPECIFICATION}}
-                             </div>
-                                  <a href="final.html?page=product&product_id={{PRODUCT_ID}}" class="more">
-                                    <img src="res/images/more1.png">
-                                  </a>
-                          </li>
-                        </ol>
-                      </li>`);
+                                <ol>
+                                   <li class="product_img"><a href="final.html?page=product&product_id={{PRODUCT_ID}}"><img
+                                      src={{PRODUCT_IMG}}
+                                      alt="{{TYPE}} {{NAME}}"></a>
+                                   </li>
+                                  <li class="product_con">
+                                    <a href="final.html?page=product&product_id={{PRODUCT_ID}}">{{TYPE}} <span>{{NAME}}</span></a>
+                                     <div class="text">
+                                          {{SHORT_SPECIFICATION}}
+                                     </div>
+                                  </li>
+                                </ol>
+                             </li>`);
 
     var productId = getQueryParam("product_id");
 
     var url = HOST+"/api/similar_product/"+ productId;
-
-    var contentElement = document.getElementById("similarProducts");
 
     var jqxhr = $.get( url, function(response) {
 
@@ -56,7 +51,23 @@ function generateSimilarProducts(productId){
             similarProducts = similarProducts + tmp;
         }
 
-        contentElement.insertAdjacentHTML('beforeEnd', similarProducts);
+        var swiperContainer = document.getElementById("swiperContainer");
+        swiperContainer.innerHTML = '<div class="swiper-wrapper"></div>'; // Очистите содержимое контейнера карусели
+
+        var swiperWrapper = swiperContainer.querySelector(".swiper-wrapper");
+
+        // Вставьте сгенерированные элементы в контейнер карусели
+        swiperWrapper.insertAdjacentHTML('beforeEnd', similarProducts);
+
+        // Инициализируйте Swiper
+        var mySwiper = new Swiper('.swiper-container', {
+            slidesPerView: 4, // Количество отображаемых слайдов
+            spaceBetween: 20, // Расстояние между слайдами
+            autoplay: {
+                delay: 3000, // Задержка между переключениями в миллисекундах (например, 5000 для 5 секунд)
+                disableOnInteraction: false, // Отключает автопрокрутку при взаимодействии пользователя с каруселью
+            },
+        });
 
     }).done(function() {
         console.log("similarProduct generated");

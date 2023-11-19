@@ -49,7 +49,7 @@ var contentProduct = (`<div class="js-gallery-wrap">
                                           <div class="left_pics">
                                              <figure><a href="product_image"><img
                                                 itemprop="image" src={{PRODUCT_IMG}}
-                                                alt="Колесный погрузчик ZL18H"></a></figure>
+                                                alt = "{{TYPE}} {{NAME}}" ></a></figure>
                                           </div>
                                        </div>
                                     </div>
@@ -66,19 +66,15 @@ var contentProduct = (`<div class="js-gallery-wrap">
                                  <div class="content">
                                     <div class="etw_hometitle"><em>Схожая продукция</em></div>
                                     <div class="swiper_box">
-                                       <div class="swiper related_pro ">
-                                          <ul class="swiper-wrapper" id = "similarProducts">
-                                            <!-- Add SimilarProducts -->
-                                          </ul>
-                                          <!-- Add Pagination -->
-                                          <div class="swiper-button-next"></div>
-                                          <div class="swiper-button-prev"></div>
-                                          <div class="swiper-pagination"></div>
+                                       <div class="swiper related_pro ">                                                                             
+                                             <div id="swiperContainer" class="swiper-container">
+                                            <!-- Сюда вставятся элементы карусели -->
+                                             </div>                                                                                                                      
                                        </div>
                                     </div>
                                  </div>
-                              </div>
-
+                              </div>                                                       
+                             
                               <div class="why_us">
                                  <div class="content">
                                     <div class="etw_hometitle small_font text-center">ПОЧЕМУ КЛИЕНТЫ
