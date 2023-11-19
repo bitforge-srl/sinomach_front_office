@@ -414,8 +414,6 @@ switch (page){
     case "product":
         var jqxhr = $.get( url, function(response) {
 
-            console.log(response)
-
             if (response.success == false){
             console.log(response.success);
 
@@ -429,7 +427,7 @@ switch (page){
                 var features = response.features;
                 var type = response.type;
                 var subType = response.subType;
-                var product_img = response.img;
+                var product_img = response.imgId;
                 var similarProducts = response.similarProducts;
                 var additionalDescription = response.additionalDescription;
                 var shortSpecification = JSON.parse(shortSpecification);
@@ -446,7 +444,7 @@ switch (page){
               .replace(/{{FULL_DESCRIPTION}}/g,fullDescription)
               .replace(/{{CONTENT}}/g, content)
               .replace(/{{SHORT_SPECIFICATION}}/g, shortSpecificationFinal)
-              .replace(/{{PRODUCT_IMG}}/g, product_img)
+              .replace(/{{PRODUCT_IMG}}/g, HOST + "/api/image/get/" + product_img)
               .replace(/{{ADD_DESCRIPTION}}/g, additionalDescription)
               .replace(/{{TYPE}}/g, type.name)
               .replace(/{{TYPE_ID}}/g, type.id);

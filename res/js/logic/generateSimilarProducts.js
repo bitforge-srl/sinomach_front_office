@@ -37,8 +37,7 @@ function generateSimilarProducts(productId){
             var name = response.similarProductsInfo[i].name;
             var id = response.similarProductsInfo[i].id;
             var type = response.similarProductsInfo[i].type.name;
-            var urlImage = response.similarProductsInfo[i].img;
-
+            var urlImage = HOST+"/api/image/get/" +response.similarProductsInfo[i].imgId;
             var shortSpecification = "";
             var shortSpecs = JSON.parse(response.similarProductsInfo[i].shortSpecification);
             var keys = Object.keys(shortSpecs);
