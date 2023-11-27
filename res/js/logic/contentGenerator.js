@@ -297,7 +297,7 @@ var contentParts = (`<div class="">
                          </div>
                          <p><center><img src="./res/images/repair_work.png" alt="Письма мастера дзен"><center></p>
                          <h4> <center> СТРАНИЦА В РАЗРАБОТКЕ <center/><h4/>
-                     </div>
+                     </div>  
 
 `)
 var contentIntroduction = (`<div class="">
@@ -330,63 +330,64 @@ var contentContacts = (`
                             </ul>
                           </div>
                         </div>
-                        <div class="clearfix"></div>
-                        <div class="content">
-                          <div class="contact_content">
-                            <div class="row mt-4">
-                              <div class="col-md-6">
-                                <div class="contact_des ">
-                                  <content>
-                                    <img src="./res/images/bottom_logo.png" alt="SINOMACH-HI International" class="mb-4">
-                                    <p>
-                                      <strong> Официальные представители в Республике Молдова</strong>
-                                    </p>
-
-                                    <div class="clearfix"></div>
+                            <div class="clearfix"></div>
+                            <div class="content">
+                              <div class="contact_content">
+                                        <img src="./res/images/bottom_logo.png" alt="SINOMACH-HI International" class="mb-4">
                                         <p>
-                                            <h4>ООО "Прима-русс"</h4>
-                                            <strong>Адрес:</strong> 3300, Tiraspol, Strada Șevcenco 97е
+                                          <strong> Официальные представители в Республике Молдова</strong>
                                         </p>
-                                        <p>
-                                          <strong>Тел.:</strong>
-                                            <a href="tel:+373-777-01-787">+373-777-01-787</a>
-                                        </p>
-                                        <p>
-                                          <strong>Email:</strong>
-                                            <a href="mailto:support@cn-sinomach.md">support@cn-sinomach.md</a>
-                                        </p>
-                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2293.860716586834!2d29.608656511029043!3d46.86582272504663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c9033754a9e26f%3A0x4badbe7c343ce08e!2z0J_RgNC-0LTQsNC20LAg0YHQutC70LDQtNGB0LrQvtC5INGC0LXRhdC90LjQutC4INC4INC60L7QvNC_0LvQtdC60YLRg9GO0YnQuNGF!5e0!3m2!1sru!2s!4v1681052086901!5m2!1sru!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-                                    <div class="clearfix"></div>
-
-                                    <p>
-                                        <h4>SRL “Mecalux-logistic” SRL</h4>
-                                        <strong>Адрес:</strong> 2023, Chisinau, str. Uzinelor, 78
-                                    </p>
-                                    <p>
-                                        <strong>Тел.:</strong>
-                                            <a href="tel:+373-60-93-33-41">+373-60-93-33-41</a>
-                                        <br>
-                                        <span style="margin-left:44px;">
-                                            <a href="tel:+373-79-95-93-00">+373-79-95-93-00</a>
-                                        </span>
-                                    </p>
-                                    <p>
-                                  <strong>Email:</strong>
-                                  <a href="mailto:support@cn-sinomach.md">support@cn-sinomach.md</a>
-                                  </p>
-                                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2720.930173546631!2d28.8893186!3d47.002344!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97bd686db4c0d%3A0x841c86481bd8627b!2sRafturi%20Comerciale%20%2F%20Stelaje%20pentru%20depozit!5e0!3m2!1sru!2s!4v1685259584659!5m2!1sru!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-                                  </content>
-                                  <!--code-->
-                                  </div>
-                                  <div class="clearfix"></div>
-                                </div>
+                                   <div class="content">
+                                        <div class="contact_content">
+                                           <div class="row mt-4">
+                                                <div class="col-md-6">
+                                                    <div class="contact_des">
+                                                         <content>
+                                                            <p>
+                                                                <h4>ООО "Прима-русс"</h4>
+                                                                <strong>Адрес:</strong> 3300, Tiraspol, Strada Șevcenco 97е
+                                                            </p>
+                                                            <p>
+                                                                <strong>Тел.:</strong>
+                                                                <a href="tel:+373-777-01-787">+373-777-01-787</a>
+                                                            </p>
+                                                            <p>
+                                                                <strong>Email:</strong>
+                                                                <a href="mailto:support@cn-sinomach.md">support@cn-sinomach.md</a>
+                                                            </p>
+                                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2293.860716586834!2d29.608656511029043!3d46.86582272504663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c9033754a9e26f%3A0x4badbe7c343ce08e!2z0J_RgNC-0LTQsNC20LAg0YHQutC70LDQtNGB0LrQvtC5INGC0LXRhdC90LjQutC4INC4INC60L7QvNC_0LvQtdC60YLRg9GO0YnQuNGF!5e0!3m2!1sru!2s!4v1681052086901!5m2!1sru!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                                        </content>
+                                                                                  
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="contact_des">
+                                                          <content>
+                                                            <p>
+                                                                <h4>SRL “Mecalux-logistic” SRL</h4>
+                                                                <strong>Адрес:</strong> 2023, Chisinau, str. Uzinelor, 78
+                                                            </p>
+                                                            <p>
+                                                                <strong>Тел.:</strong>
+                                                                <a href="tel:+373-60-93-33-41">+373-60-93-33-41   </a>
+                                                                <a href="tel:+373-79-95-93-00">+373-79-95-93-00</a>
+                                                            </p>
+                                                            <p>
+                                                                <strong>Email:</strong>
+                                                                <a href="mailto:support@cn-sinomach.md">support@cn-sinomach.md</a>
+                                                            </p>
+                                                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2720.930173546631!2d28.8893186!3d47.002344!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97bd686db4c0d%3A0x841c86481bd8627b!2sRafturi%20Comerciale%20%2F%20Stelaje%20pentru%20depozit!5e0!3m2!1sru!2s!4v1685259584659!5m2!1sru!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                                        </content>
+                                    
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                   </div>
+                   
                               </div>
                             </div>
-                        </div>
                       </div>
-
 `)
 var contentService = (`<div class="">
                            <div id="quicknav">
